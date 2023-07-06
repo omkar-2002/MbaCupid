@@ -4,12 +4,12 @@ import Propic from '../../../assets/images/userProfile.png';
 import LinkedIn from '../../../assets/images/LinkedIn.png';
 import styles from './styles';
 
-const UserCard = ({title, age, interest}) => {
+const UserCard = ({title, age, interest,onPressPhoto}) => {
   return (
     <View style={styles.cardView}>
-      <View style={styles.imgView}>
+      <TouchableOpacity onPress={onPressPhoto} activeOpacity={0.6} style={styles.imgView}>
         <Image source={Propic} style={styles.img} resizeMode="cover" />
-      </View>
+      </TouchableOpacity>
       <View>
         <View style={styles.nameView}>
           <Text numberOfLines={1} style={styles.titleName}>

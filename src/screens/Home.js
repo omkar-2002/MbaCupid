@@ -7,15 +7,14 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import React from 'react';
-import messaging from '@react-native-firebase/messaging';
-import {useEffect, useState} from 'react';
-import {useNavigation} from '@react-navigation/native';
+import analytics from '@react-native-firebase/analytics';
 import Colors from '../constants/Colors';
 import UserCard from '../components/home/UserCard';
 import UserInfo from '../components/home/UserInfo';
 import profile from '../assets/images/profileHeader.png';
 import Hamburger from '../assets/images/Hamburger.png';
-import ActiveSubtract from '../assets/svgImages/ActiveSubtract.svg';
+import Right from '../assets/svgImages/Right.svg';
+import Wrong from '../assets/svgImages/Wrong.svg';
 
 const Home = () => {
   return (
@@ -24,6 +23,13 @@ const Home = () => {
       contentContainerStyle={styles.container}
       style={styles.styleContainer}>
       <UserCard
+        onPressPhoto={async () =>
+          await analytics().logEvent('on_photo_clicked', {
+            userName: 'Manish Mandal',
+            interest: ['Product Manager', 'Forbes Advisor'],
+            age: 24,
+          })
+        }
         title={'Manish Mandal'}
         age={24}
         interest={['Product Manager', 'Forbes Advisor']}
@@ -41,6 +47,14 @@ const Home = () => {
           {title: '🙈Introvert'},
         ]}
       />
+      <View style={styles.actions}>
+        <TouchableOpacity activeOpacity={0.4}>
+          <Wrong />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.actionBtn} activeOpacity={0.4}>
+          <Right />
+        </TouchableOpacity>
+      </View>
     </ScrollView>
   );
 };
@@ -76,4 +90,6 @@ export const HomeOptions = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {paddingHorizontal: 30, paddingVertical: 20},
   styleContainer: {flex: 1, backgroundColor: Colors.primary},
+  actions: {flexDirection: 'row', justifyContent: 'center'},
+  actionBtn: {marginLeft: 20},
 });
