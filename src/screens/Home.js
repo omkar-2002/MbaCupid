@@ -7,6 +7,9 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import React from 'react';
+import messaging from '@react-native-firebase/messaging';
+import {useEffect, useState} from 'react';
+import {useNavigation} from '@react-navigation/native';
 import Colors from '../constants/Colors';
 import UserCard from '../components/home/UserCard';
 import UserInfo from '../components/home/UserInfo';

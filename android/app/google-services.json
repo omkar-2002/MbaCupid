@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "714909162785",
+    "project_id": "mbacupid-8e34b",
+    "storage_bucket": "mbacupid-8e34b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714909162785:android:a77ddba3ab7d76197af260",
+        "android_client_info": {
+          "package_name": "com.mbacupid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714909162785-5pl65kpq5gnotobh0836t5di0tv1e8rt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mbacupid",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "714909162785-9vs6pjilatkqmn7sekb0ui2cl0ami96n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIa-I193Bl3zh5nmQnhP1Xgs34m8g5AHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714909162785-9vs6pjilatkqmn7sekb0ui2cl0ami96n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
