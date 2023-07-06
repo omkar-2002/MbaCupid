@@ -51,7 +51,7 @@ const TabNavigator = () => {
           },
         })}
         component={Liked}
-        name="Liked"
+        name="Liked You"
       />
       <Tab.Screen
         options={props => ({

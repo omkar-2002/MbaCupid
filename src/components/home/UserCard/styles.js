@@ -7,7 +7,7 @@ export default styles = StyleSheet.create({
     backgroundColor: Colors.secondary,
     padding: 13,
   },
-  imgView: {width: '100%'},
+  imgView: {width: '100%', position: 'relative'},
   img: {
     width: '100%',
     height: undefined,
@@ -17,7 +17,7 @@ export default styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginTop:7
+    marginTop: 7,
   },
   titleName: {
     fontSize: 20,
@@ -27,4 +27,17 @@ export default styles = StyleSheet.create({
   },
   age: {fontSize: 14, color: Colors.white, fontWeight: 'bold'},
   interest: {color: Colors.white},
+  place: {
+    padding: 3,
+    paddingHorizontal: 7,
+    backgroundColor: Colors.white,
+    borderWidth: 1,
+    borderBlockColor: Colors.primary,
+    width: '45%',
+    position: 'absolute',
+    right: 15,
+    top: 15,
+    borderRadius: 5,
+  },
+  placeText: {color: Colors.primary, textAlign: 'center', width: '100%'},
 });

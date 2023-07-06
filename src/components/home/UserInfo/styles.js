@@ -13,7 +13,7 @@ export default styles = StyleSheet.create({
     height: 1,
     width: '100%',
     backgroundColor: Colors.inactiveTabBar,
-    marginVertical: 5,
+    marginVertical: 10,
   },
   textCenter: {
     color: Colors.white,

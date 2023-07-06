@@ -23,6 +23,7 @@ const Home = () => {
       contentContainerStyle={styles.container}
       style={styles.styleContainer}>
       <UserCard
+        workPlace={'IIM Bangalore'}
         onPressPhoto={async () =>
           await analytics().logEvent('on_photo_clicked', {
             userName: 'Manish Mandal',
