@@ -75,7 +75,7 @@ export const HomeOptions = ({navigation}) => {
         </TouchableOpacity>
         <View>
           <Text style={{color: Colors.white}}>Hey,</Text>
-          <Text style={{color: Colors.hobbies}}>Natsha</Text>
+          <Text style={{color: Colors.hobbies}}>Natasha</Text>
         </View>
       </View>
     ),
